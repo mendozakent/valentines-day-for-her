@@ -1,0 +1,55 @@
+<!-- This is a side project for Valentines Day Feb 14, 2025. This is being used to show for my girlfriend.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Lock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <div class="image-container">
+            <div class="tenor-gif-embed" data-postid="23368729" data-share-method="host" data-aspect-ratio="1" data-width="100%" data-hide="true">
+                <a href="https://tenor.com/view/mocha-milk-missing-gif-23368729">Mocha Milk Sticker</a> from 
+                <a href="https://tenor.com/search/mocha-stickers">Mocha Stickers</a>
+            </div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+        
+        <div id="message"></div>
+
+        <div class="numpad">
+            <div class="lock-container">
+                <i class="fas fa-lock"></i>
+                <h2>Input passcode</h2>
+            </div>
+
+            <input type="text" id="display" readonly>
+            <div class="row">
+                <button onclick="appendNumber(1)">1</button>
+                <button onclick="appendNumber(2)">2</button>
+                <button onclick="appendNumber(3)">3</button>
+            </div>
+            <div class="row">
+                <button onclick="appendNumber(4)">4</button>
+                <button onclick="appendNumber(5)">5</button>
+                <button onclick="appendNumber(6)">6</button>
+            </div>
+            <div class="row">
+                <button onclick="appendNumber(7)">7</button>
+                <button onclick="appendNumber(8)">8</button>
+                <button onclick="appendNumber(9)">9</button>
+            </div>
+            <div class="row">
+                <button onclick="checkCode()">Enter</button>
+                <button onclick="appendNumber(0)">0</button>
+                <button onclick="deleteLast()">⌫</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
